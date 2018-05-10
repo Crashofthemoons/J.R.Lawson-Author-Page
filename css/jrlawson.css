@@ -1,0 +1,208 @@
+body {
+  width: 100%;
+  font-size: 1em;
+  background-color: whitesmoke;
+  margin: 
+}
+
+div#header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gainsboro;
+}
+
+div#banner img, div#spacer img {
+  position: center;
+  letter-spacing: 1.5em;
+}
+
+div#spacer {
+  width: 100%;
+  visibility: hidden;
+  margin-top: -1.5%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Book Antiqua", "Palatino Linotype", "Palatino Serif";
+  font-size: 4.6em;
+}
+
+h2 {
+ font-family: "Book Antiqua", "Palatino Linotype", "Palatino Serif";
+ font-size: 3em;
+ text-align: center;
+}
+
+h3 {
+ font-family: "Book Antiqua", "Palatino Linotype", "Palatino Serif";
+ font-size: 2em;
+ text-align: center;
+}
+
+p {
+ font-family: "Book Antiqua", "Palatino Linotype", "Palatino Serif";
+ font-size: 1em; 
+}
+
+div#navbar {
+/*    clear: both;*/
+    width: 60%;
+/*    margin-left: 32%;*/
+    text-align: center;
+    font-weight: 100;
+    display: flex;
+/*    flex-wrap: wrap;*/
+    padding: 10px;
+    margin: 45px auto;
+    border-radius: 5px;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+div#navbar, .changeBackground {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+div#navbar, .changeBackground {
+    text-align: center;
+/*    display: inline;*/
+/*    width: 15%;*/
+/*    float: left;*/
+    margin: 0 auto 0 auto;
+}
+
+div#navbar, .changeBackground a {
+    font-family: impact, charcola, sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+/*    display: block;*/
+    padding: .3em;
+    
+}
+
+.changeBackground {
+    background-color: gainsboro;
+    flex-basis: 200px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 3px;
+    flex-grow: 1;
+}
+
+.changeBackground:hover {
+    background-color: gray;
+}
+
+div.two-books {
+    display: block;
+    padding: 10em;
+    margin: auto;
+}
+
+
+
+.homepage1 {
+    margin: 3em;
+    float: left;
+}
+
+.homepage2 {
+    margin: 3em;
+    float: right;
+}
+
+div.photo-content {
+    display: block;
+    padding: 10em;
+}
+
+div.content {
+    float: right;
+    margin: auto;
+    width: 50%;
+}
+
+div.photo-float-left {
+    float: left;
+    margin: auto;
+}
+
+.button {
+  font-family: impact, charcola, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  background-color: gainsboro;
+  padding: 3px 7px 3px 7px;
+  color: white;
+  margin: auto;
+}
+
+div#contact {
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  font-family: "Book Antiqua", "Palatino Linotype", "Palatino Serif";
+  font-size: 1.5em;
+}
+
+button, textarea, input {
+  padding: 12px 20px;
+  background-color: gainsboro;
+  resize: none;
+  border: .7px solid white;
+  cursor: pointer;
+  margin: auto;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  margin: 10px;
+  text-align: center;
+  border: 1px solid black;
+  max-width: 300px;
+}
+
+.merch > a {
+   text-align: center;
+   font-family: "Book Antiqua", "Palatino Linotype", "Palatino Serif";
+   font-size: 1em;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+a:link img {
+    opacity: 1;
+}
+
+a:hover img {
+    opacity: 1;
+}
+
+.button:hover {
+    background-color: gray;
+}
+
+
+
+
+
