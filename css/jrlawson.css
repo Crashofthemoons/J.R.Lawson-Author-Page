@@ -1,11 +1,36 @@
 body {
-  width: 100%;
+  margin: 0;
   font-size: 1em;
   background-color: whitesmoke;
-  margin: 
+  padding: 0;
+  box-sizing: border-box;
 }
 
-div#header {
+.page {
+    display:felx;
+    flex-wrap: wrap;
+}
+
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.footer {
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.icon {
+    padding: 0 15px;
+}
+
+#header {
     width: 100%;
     position: absolute;
     top: 0;
@@ -13,16 +38,6 @@ div#header {
     background-color: gainsboro;
 }
 
-div#banner img, div#spacer img {
-  position: center;
-  letter-spacing: 1.5em;
-}
-
-div#spacer {
-  width: 100%;
-  visibility: hidden;
-  margin-top: -1.5%;
-}
 
 h1 {
   text-align: center;
@@ -44,120 +59,38 @@ h3 {
 
 p {
  font-family: "Book Antiqua", "Palatino Linotype", "Palatino Serif";
- font-size: 1em; 
+ font-size: 1.3em; 
 }
 
-div#navbar {
-/*    clear: both;*/
-    width: 60%;
-/*    margin-left: 32%;*/
-    text-align: center;
-    font-weight: 100;
-    display: flex;
-/*    flex-wrap: wrap;*/
-    padding: 10px;
-    margin: 45px auto;
-    border-radius: 5px;
-    align-content: space-between;
-    flex-direction: row;
-}
-
-div#navbar, .changeBackground {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-div#navbar, .changeBackground {
-    text-align: center;
-/*    display: inline;*/
-/*    width: 15%;*/
-/*    float: left;*/
-    margin: 0 auto 0 auto;
-}
-
-div#navbar, .changeBackground a {
-    font-family: impact, charcola, sans-serif;
-    font-size: 1.1em;
-    font-weight: 400;
-    text-decoration: none;
-    color: white;
-/*    display: block;*/
-    padding: .3em;
-    
-}
-
-.changeBackground {
-    background-color: gainsboro;
-    flex-basis: 200px;
-    padding: 15px;
-    margin: 5px;
-    border-radius: 3px;
-    flex-grow: 1;
-}
-
-.changeBackground:hover {
-    background-color: gray;
-}
-
-div.two-books {
-    display: block;
-    padding: 10em;
-    margin: auto;
-}
-
-
-
-.homepage1 {
-    margin: 3em;
-    float: left;
-}
-
-.homepage2 {
-    margin: 3em;
-    float: right;
-}
-
-div.photo-content {
-    display: block;
-    padding: 10em;
-}
-
-div.content {
-    float: right;
-    margin: auto;
-    width: 50%;
-}
-
-div.photo-float-left {
-    float: left;
-    margin: auto;
-}
 
 .button {
   font-family: impact, charcola, sans-serif;
   text-align: center;
   text-decoration: none;
   background-color: gainsboro;
-  padding: 3px 7px 3px 7px;
+  padding: 15px;
   color: white;
   margin: auto;
+  width: 30%;
+  font-size: 1.3em;
 }
 
 div#contact {
   text-align: center;
-  margin: 1em;
+  margin: 0 auto;
   padding: 1em;
   font-family: "Book Antiqua", "Palatino Linotype", "Palatino Serif";
   font-size: 1.5em;
 }
 
-button, textarea, input {
+textarea, input {
   padding: 12px 20px;
   background-color: gainsboro;
   resize: none;
   border: .7px solid white;
   cursor: pointer;
-  margin: auto;
+  margin: 1em auto;
+  
 }
 
 .flex-box {
@@ -170,11 +103,17 @@ button, textarea, input {
 }
 
 .flex-item {
-  margin: 10px;
+  margin: 25px;
   text-align: center;
   border: 1px solid black;
   max-width: 300px;
+  
 }
+
+.flex-item:hover {
+   opacity: .5;
+}
+
 
 .merch > a {
    text-align: center;
@@ -202,7 +141,205 @@ a:hover img {
     background-color: gray;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 630px) {
 
+    
+    h1 {
+        font-size: 3.6em;
+    }
+    
+    #navbar {
+    text-align: center;
+    font-weight: 100;
+    display: flex;
+    padding: 35px;
+    margin: 0 auto;
+    border-radius: 0;
+    align-content: space-between;
+    flex-direction: row;
+   }
+    
+    #navbar, .changeBackground a {
+    font-family: impact, charcola, sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+    }
+    
+    .changeBackground {
+    background-color: gainsboro;
+    flex-basis: 200px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 3px;
+    flex-grow: 1;
+}
 
+    .changeBackground:hover {
+    background-color: gray;
+}
+    
+    .content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+    
+    textarea, input {
+      width: 70%;
+    }
+    
+    .bookImg{
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .jackieImg {
+        width: 320px;
+    }
+}
 
+/* Tablet Styles */
+@media only screen and (min-width: 630px) and (max-width: 980px) {
 
+    
+    #navbar {
+    width: 60%;
+    text-align: center;
+    font-weight: 100;
+    display: flex;
+    padding: 55px;
+    margin: 0 auto;
+    border-radius: 5px;
+    align-content: space-between;
+    flex-direction: row;
+    }
+    
+    #navbar, .changeBackground {
+        list-style-type: none;
+        padding-left: 0;
+        text-align: center;
+        margin: 0 auto 0 auto;
+    }
+    
+    #navbar, .changeBackground a {
+        font-family: impact, charcola, sans-serif;
+        font-size: 1.1em;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        padding: .3em;
+    }
+    
+    .changeBackground {
+        background-color: gainsboro;
+        flex-basis: 200px;
+        padding: 15px;
+        margin: 5px;
+        border-radius: 3px;
+        flex-grow: 1;
+    }
+    
+    .changeBackground:hover {
+        background-color: gray;
+    }
+    
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    textarea, input {
+      width: 80%;
+    }
+    
+    .bookImg {
+        width: 360px;
+    }
+    
+    .jackieImg {
+        width: 490px;
+    }
+
+}
+
+/*Desktop Styles */
+@media only screen and (min-width: 980px) {
+
+    
+    #navbar {
+/*    clear: both;*/
+    width: 60%;
+/*    margin-left: 32%;*/
+    text-align: center;
+    font-weight: 100;
+    display: flex;
+/*    flex-wrap: wrap;*/
+    padding: 55px;
+    margin: 0 auto;
+    border-radius: 5px;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+    #navbar, .changeBackground {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0 auto 0 auto;
+        text-align: center;
+    }
+
+    #navbar, .changeBackground a {
+        font-family: impact, charcola, sans-serif;
+        font-size: 1.1em;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+    /*    display: block;*/
+        padding: .3em;
+
+    }
+
+    .changeBackground {
+        background-color: gainsboro;
+        flex-basis: 200px;
+        padding: 15px;
+        margin: 5px;
+        border-radius: 3px;
+        flex-grow: 1;
+    }
+
+    .changeBackground:hover {
+        background-color: gray;
+    }
+
+    .content {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+    .submit {
+        margin: 0 5em;
+    }
+
+    
+    .bookImg {
+        width: 360px;
+        
+    }
+    
+    .jackieImg {
+        width: 490px;
+        height: 500px;
+    }
+    
+    .section {
+        flex-direction: row;
+    }
+}

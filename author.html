@@ -2,30 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-   <!-- 
-    The title is the text that will appear in the browser
-    toolbar, in a bookmark list, and in search engine
-    results. Give each page a unique title that describes
-    its particular contents. See Chapter 88.
-     -->
 <title>J. R. Lawson Author Page</title>
-    <!-- 
-    Search engines display your meta name text in
-    search results, so do some selling here. Don't be
-    long-winded. They trim anything longer than about
-    160 characters. See Chapter 89.
-     -->
 <meta name="description" content="J. R. Lawson's author page.">
 <link rel="stylesheet" type="text/css" href="css/jrlawson.css">
 </head>
 
 <body>
-  <div id="banner">
-    <img src=""> <!-- Need image link -->
-  </div>
-  <div id="spacer">
-    <img src=""> <!-- Need image link -->
-  </div>
+<div class="page">
+
   <h1>J. R. Lawson</h1>
     <!-- Navigation -->
     <div id="navbar">
@@ -35,30 +19,43 @@
       <div class="changeBackground"><a href="shop.html">Shop</a></div>
  </div>
         <br>
-    <div class="photo-content">
-    <img class="photo-float-left" src="JRLawsonPhotos/authorpic.jpg" alt="J.R.Lawson Headshot" width="490" height="500">
-    <div class="content">
-        <h2>About J. R. Lawson</h2>
-            <p>J.R. LAWSON is a self-published author of two novels so far for young adults. Among are, Forget Me Not—a lovable zombie romance, and Blood Land—a vampire adventure story. She says “As long as I’ve been enjoying making up stories (which is quite a long time) I’ve also enjoyed the spooky and supernatural.  I’ve always been a fan of the classic movie monsters and love re-imagining them in unique ways and putting them in different situations.  I have notebooks of ghost stories I used to write when I was in middle school that I go back to still from time to time.  I’ve always loved writing and imagining but I started my first book in high school and finished it during college.  I had written it solely for myself but I soon realized that others seemed to like my writing and story as well and I loved sharing it so the idea to self-publish began.  I started as only releasing it as an e-book but once I realized it was more popular than I had thought, the physical copy soon followed.  Ever since, my creativity had been boosted even further and I will continue to enjoy writing and sharing these stories with anyone who is willing to read them.” Ms. Lawson lives in Huntsville, Alabama and works with animals on a daily basis.  In addition she has her own online Etsy shop where she makes and sells Halloween crafts in her spare time when she isn’t writing.</p>
-        </div>
+    <div class="section">
+        <img src="JRLawsonPhotos/authorpic.jpg" class="jackieImg" alt="J.R.Lawson Headshot">
     </div>
     
+    <h2>About J. R. Lawson</h2>
+    
+    <div class="section content">
+        <p>J.R. LAWSON is a self-published author of two novels so far for young adults. Among are, Forget Me Not—a lovable zombie romance, and Blood Land—a vampire adventure story. She says “As long as I’ve been enjoying making up stories (which is quite a long time) I’ve also enjoyed the spooky and supernatural.  I’ve always been a fan of the classic movie monsters and love re-imagining them in unique ways and putting them in different situations.  I have notebooks of ghost stories I used to write when I was in middle school that I go back to still from time to time.  I’ve always loved writing and imagining but I started my first book in high school and finished it during college.  I had written it solely for myself but I soon realized that others seemed to like my writing and story as well and I loved sharing it so the idea to self-publish began.  I started as only releasing it as an e-book but once I realized it was more popular than I had thought, the physical copy soon followed.  Ever since, my creativity had been boosted even further and I will continue to enjoy writing and sharing these stories with anyone who is willing to read them.” Ms. Lawson lives in Huntsville, Alabama and works with animals on a daily basis.  In addition she has her own online Etsy shop where she makes and sells Halloween crafts in her spare time when she isn’t writing.</p>
+    </div>
+    
+    
     <h2>Contact J. R. Lawson</h2>
-    <div id="contact">
-    <form action="send-email.php" method="post">
-      <br>
-      <input type="text" id="nameField" name="full-name" size="150" maxlength="50" placeholder="Name">
-      <br>
-      <br>
-      <input type="email" id="emailField" name="email" size="150" maxlenghth="100" placeholder="Email">
-      <br>
-      <br>
-      <input type="text" id="subjectField" name="subject" size="150" maxlenghth="100" placeholder="Subject">
-      <br>
-      <br>
+    <div id="contact" class="section">
+    <form action="mailto:jrlawsonnovels@gmail.com" method="post" enctype="text/plain">
+      
+      <input type="text" id="nameField" size="150" maxlength="50" placeholder="Name">
+      
+      <input type="email" id="emailField" size="150" maxlenghth="100" placeholder="Email">
+      
+      <input type="text" id="subjectField" size="150" maxlenghth="100" placeholder="Subject">
+      
       <textarea type="message" id="messageField" rows="10" cols="148" placeholder="Message"></textarea>
-      <br>
-      <button type="button" id="submit-button">Submit</button>
+      
+      <button type="submit" value="Send" class="submit button">Submit</button>
     </form>
   </div>
+    
+<footer class="section footer">
+  <a href="https://www.pinterest.com/pmpknqueen/" target="_blank"><img src="JRLawsonPhotos/pinteresticon.png" class="icon" width="50" height="50"></a> 
+  <a href="https://www.instagram.com/pmpknqueen/" target="_blank"><img src="JRLawsonPhotos/instaicon.jpeg" class="icon" width="50" height="50"></a>
+  <a href="https://www.etsy.com/shop/FreakishlyAdorable" target="_blank"><img src="JRLawsonPhotos/etsyicon.png" class="icon" width="50" height="50"></a>
+</footer>
+</div>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="jrlawson.js"></script>
 </body>
+</html>
