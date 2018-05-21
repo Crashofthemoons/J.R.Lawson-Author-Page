@@ -7,7 +7,7 @@ body {
 }
 
 .page {
-    display:felx;
+    display: flex;
     flex-wrap: wrap;
 }
 
