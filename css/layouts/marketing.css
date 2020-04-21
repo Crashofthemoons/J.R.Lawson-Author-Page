@@ -24,9 +24,31 @@ label {
     color: #748697;
 }
 
+.cropped {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+}
+
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
+}
+
+.img-link {
+    text-decoration: none;
+    color: white;
+}
+
+.img-link:hover {
+    text-decoration: none;
+    opacity: .5;
+}
+
+.img-link p {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
 }
 
 /*
