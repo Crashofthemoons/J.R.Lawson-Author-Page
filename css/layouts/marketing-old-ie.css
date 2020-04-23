@@ -30,6 +30,12 @@ label {
     height: auto;
 }
 
+.cropped {
+    object-fit: cover;
+    height: 250px !important;
+    width: 250px !important;
+}
+
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need

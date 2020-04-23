@@ -26,8 +26,8 @@ label {
 
 .cropped {
     object-fit: cover;
-    height: 250px;
-    width: 250px;
+    height: 250px !important;
+    width: 250px !important;
 }
 
 .pure-img-responsive {
