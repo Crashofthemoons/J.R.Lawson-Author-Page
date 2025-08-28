@@ -11,7 +11,7 @@
     gtag('config', 'G-EGYEYT64JY');
 
     </script>
-
+    <script src="javascript.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example that shows off a responsive product landing page.">
@@ -49,14 +49,25 @@
 
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" >J. R. L.</a>
+        <div class="pure-menu-heading" >J. R. Lawson</div>
 
         <ul class="pure-menu-list">
-            <li class="pure-menu-item"><a href="#top" class="pure-menu-link">Home</a></li>
-            <li class="pure-menu-item"><a href="#books" class="pure-menu-link">Books</a></li>
-            <li class="pure-menu-item"><a href="#author" class="pure-menu-link">Author</a></li>
-            <li class="pure-menu-item"><a href="#shop" class="pure-menu-link">Shop</a></li>
-            <!-- <li class="pure-menu-item"><a href="#merch" class="pure-menu-link">Merch</a></li> -->
+            <li class="pure-menu-item link"><a href="#top">Home</a></li>
+            <li class="pure-menu-item link"><a href="#books">Books</a></li>
+            <li class="pure-menu-item link"><a href="#author">Author</a></li>
+            <li class="pure-menu-item link"><a href="#shop">Shop</a></li>
+            <li class="dropdown">
+                <button class="dropbtn pure-menu-item" onclick="drpDown()">Socials
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <div><a class="pure-menu-item" target="_blank" href="https://www.instagram.com/pmpknqueen/">Instagram</a></div>
+                  <div><a class="pure-menu-item" target="_blank" href="https://www.facebook.com/jrlawsonnovels">Facebook</a></div>
+                  <div><a class="pure-menu-item" target="_blank" href="https://www.etsy.com/shop/FreakishlyAdorable?ref=seller-platform-mcnav&section_id=55179624">Etsy</a></div>
+                  <div><a class="pure-menu-item" target="_blank" href="https://www.youtube.com/@JackieArment">YouTube</a></div>
+                  <div><a class="pure-menu-item" target="_blank" href="https://www.pinterest.com/pmpknqueen/">Pinterest</a></div>
+                </div>
+            </li>
         </ul>
     </div>
 </div>
@@ -68,7 +79,7 @@
             Horror fantasy novels that will capture your attention.
         </p>
         <p>
-            <a href="#author" class="pure-button pure-button-primary">Read more about J. R. Lawson</a>
+            <a href="https://www.amazon.com/stores/J.R.-Lawson/author/B07JBCZ7SZ?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true&ccs_id=07bfc5d9-499a-4aba-8d1d-a266d76ee7e4" target="_blank" class="pure-button pure-button-primary">Shop Novels on Amazon</a>
         </p>
     </div>
 </div>
@@ -93,38 +104,40 @@
                 Fear No Evil
             </h3>
             <p>
-                A sneak peek of the book I'm currently writing!
-                This is the first chapter after the prologue. This book, which you'll see as you begin to read, is about a 23-year-old girl named Mel who is possessed by a demon. She's been possessed for most of her life and so, in order to deal with it, she uses her demonic powers as a sort of vigilante--ridding her town of the scum that lives there.
-                I picked this chapter because I think it really gives you an idea of who Mel is as a character and the quote "relationship" she has with the demon that is possessing her.
-                I hope you all enjoy it and it gives you a little treat while we are stuck at home social distancing! 🙂
-
-                Just follow the link below to read and P.S. - THIS BOOK DOES CONTAIN STRONG LANGUAGE (the demon in this book doesn't exactly speak cleanly 😉) Enjoy!
+                A girl named Melinda Shaw goes through life being possessed by a demon she knows as Morfran. She has been possessed since she was six, and instead of trying to rid herself of the entity, she has since developed an almost friendship with him and uses his demon powers to right the wrongs around her town. That is, until she meets some new people along the way, finds some magic inside her that she didn’t even know she had, and even unravels a prophecy for the end of the world that she soon realizes having a demon inside her might be even more complicated than she had originally thought.
             </p>
             <div class="l-box-lrg is-center pure-u-1 pure-u-md-1 pure-u-lg-1">
-                <a href="https://www.bookrix.com/book.html?bookID=pumpkinqueen_1536368611.4984800816&fbclid=IwAR3IZhkeQBBwaYcfhbNVWNoIDzoGtZsN0wgi4fDM-MVMRV8hcXdtr5RD434#0,558,6786" target="_blank" class="pure-button ">Read Chapter 1</a>
+                <a href="https://docs.google.com/document/d/1ykglFjFEEaIQPuaTzeSnTxvQgH-Sc72MOTn_syvBvcg/edit?usp=sharing" target="_blank" class="pure-button ">Read Preview Chapter</a>
             </div>
         </div>
         </div>
-    </div>
-
-    <div id='shop' class="content">
-        <h2 class="content-head is-center">Signed copies available on my Etsy site</h2>
-        <div class="pure-g">
-            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                <a href="https://www.etsy.com/listing/788650925/personalized-signed-copy-forget-me-not?ref=shop_home_active_15" target="_blank" class="pure-menu-link"><img width="290" alt="Forget Me Not" class="pure-img-responsive" src="img/common/forgetmenotsigned.jpg"></a>
-            </div>
-            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                <a href="https://www.etsy.com/listing/788654013/personalized-signed-copy-blood-land-by?ref=shop_home_active_14" target="_blank" class="pure-menu-link"><img width="290" alt="Blood Land" class="pure-img-responsive" src="img/common/bloodlandsigned.jpg"></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="content ribbon">
-        <h2 class="content-head is-center content-head-ribbon">Current Novels</h2>
 
         <div class="pure-g">
             <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                <img width="300" alt="Forget Me Not" class="pure-img-responsive" src="img/common/3dbook_fmn.jpg">
+                <img width="600" height="400" alt="Blood Land: A New Age" class="pure-img-responsive" src="img/common/BloodLand2Mockup.jpg">
+            </div>
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <h3 class="content-subhead">
+                    Blood Land: A New Age
+                </h3>
+                <p>
+                    It’s the year 2048, and vampires are now living peacefully amongst humans...almost. Twenty-three years after the destruction of Dagon’s reign, Kale and Nora Rogan are finding it difficult to juggle being leaders of their community with family life. Even though vampires and humans have been almost completely integrated everywhere, prejudice is still blemishing what could become a new and peaceful way of existence, and no one feels it more than the younger generation. Kale and Nora’s kids, Mina and Michael, just want to be normal teens, but when one of them is human, and the other a vampire, it can make understanding one another even harder. Not to mention, going to school, dating, and dealing with unfair vampire phobias brought on by a new radical group that's cropping up around the country. It seems as though this New Age is going to take some time. Can vampires and humans really learn to coexist, or is it, as some may think, against nature?
+                </p>
+                <div class="l-box-lrg is-center pure-u-1 pure-u-md-1 pure-u-lg-1">
+                    <a href="https://docs.google.com/document/d/1SfyJQJS4Ey6BlzTldKWO7aHB_HCZlTDouZ01lDoi8Mg/edit?usp=sharing" target="_blank" class="pure-button ">Read Preview Chapter</a>
+                </div>
+            </div>
+            </div>
+    </div>
+
+
+
+    <div id="shop" class="content">
+        <h2 class="content-head is-center">Current Novels</h2>
+
+        <div class="pure-g">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <img width="500" alt="Forget Me Not" class="pure-img-responsive" src="img/common/3dbook_fmn.png">
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                 <h3 class="content-subhead">
@@ -135,13 +148,15 @@
                 </p>
                 <div class="section buy-now">
                     <h3>Buy Now:</h3>
-                    <a href="https://www.amazon.com/Forget-Me-Not-J-Lawson/dp/1537219081/ref=sr_1_1?ie=UTF8&qid=1516662073&sr=8-1&keywords=Forget+Me+Not+j.r.+lawson" target="_blank"><img src="http://lofrev.net/wp-content/photos/2017/03/amazon_logo.png" alt="Amazon" width="35" height="35"></a>
-                    <a href="https://www.amazon.com/Forget-Me-Not-J-R-Lawson-ebook/dp/B06VXYJVZ5/ref=sr_1_2?ie=UTF8&qid=1516662073&sr=8-2&keywords=Forget+Me+Not+j.r.+lawson" target="_blank"><img src="http://cerebral-overload.com/wp-content/uploads/2017/10/Amazon-Kindle-Logo.png" alt="Kindle" width="35" height="35"></a>
-                    <a href="https://www.barnesandnoble.com/w/forget-me-not-j-r-lawson/1124888242?ean=9781537219080" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-loBBvdnTluj6uHgakIK1LOgSsNEVkO772mMWsAe3ZcdiO53C" alt="Barnes and Noble" width="35" height="35"></a>
+                    <a href="https://www.amazon.com/Forget-Me-Not-J-Lawson/dp/1537219081/ref=sr_1_1?ie=UTF8&qid=1516662073&sr=8-1&keywords=Forget+Me+Not+j.r.+lawson" target="_blank"><img src="img/common/AmazonButton.png" alt="Amazon" width="57"></a>
+                    <a href="https://www.amazon.com/Forget-Me-Not-J-R-Lawson-ebook/dp/B06VXYJVZ5/ref=sr_1_2?ie=UTF8&qid=1516662073&sr=8-2&keywords=Forget+Me+Not+j.r.+lawson" target="_blank"><img src="img/common/KindleButton.png" alt="Kindle" width="57"></a>
+                    <!-- <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <a href="https://www.etsy.com/shop/FreakishlyAdorable?ref=seller-platform-mcnav&section_id=55179624" width="290" src="img/common/ForgetMeNotSigned.JPG"></a>
+                    </div> -->
                 </div>
             </div>
             <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                <img width="300" alt="Blood Land" class="pure-img-responsive" src="img/common/3dbook_bl.jpg">
+                <img width="500" alt="Blood Land" class="pure-img-responsive" src="img/common/3dbook_bl.png">
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
                 <h3 class="content-subhead">
@@ -152,9 +167,11 @@
                 </p>
                 <div class="section buy-now">
                     <h3>Buy Now:</h3>
-                    <a href="https://www.amazon.com/Blood-Land-J-R-Lawson/dp/1979714975/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1516662153&sr=1-1" target="_blank"><img src="http://lofrev.net/wp-content/photos/2017/03/amazon_logo.png" alt="Amazon" width="35" height="35"></a>
-                    <a href="https://www.amazon.com/Blood-Land-J-R-Lawson-ebook/dp/B0794Z2BSN/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1516662153&sr=1-1" target="_blank"><img src="http://cerebral-overload.com/wp-content/uploads/2017/10/Amazon-Kindle-Logo.png" alt="Kindle" width="35" height="35"></a>
-                    <a href="https://www.barnesandnoble.com/w/blood-land-jr-lawson/1127857852?ean=9781979714976" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-loBBvdnTluj6uHgakIK1LOgSsNEVkO772mMWsAe3ZcdiO53C" alt="Barnes and Noble" width="35" height="35"></a>
+                    <a href="https://www.amazon.com/Blood-Land-J-R-Lawson/dp/1979714975/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1516662153&sr=1-1" target="_blank"><img src="img/common/AmazonButton.png" alt="Amazon" width="57"></a>
+                    <a href="https://www.amazon.com/Blood-Land-J-R-Lawson-ebook/dp/B0794Z2BSN/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1516662153&sr=1-1" target="_blank"><img src="img/common/kindleButton.png" alt="Kindle" width="57"></a>
+                    <!-- <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                        <a href="https://www.etsy.com/shop/FreakishlyAdorable?ref=seller-platform-mcnav&section_id=55179624" target="_blank" class="pure-menu-link"><img width="290" alt="Blood Land" class="pure-img-responsive" src="img/common/bloodlandsigned.jpg"></a>
+                    </div> -->
                 </div>
             </div>
             <!-- <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
@@ -175,8 +192,17 @@
                     Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
                 </p>
             </div> -->
-            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1 pure-u-lg-1">
-                <a href="https://www.etsy.com/shop/JRLawsonNovels" target="_blank" class="pure-button ">Shop Retail Books</a>
+        </div>
+    </div>
+
+    <div id='shop' class="content ribbon">
+        <h2 class="content-head-ribbon content-head is-center">Signed copies available on my Etsy site</h2>
+        <div class="pure-g">
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <a href="https://www.etsy.com/listing/4352840937/personalized-signed-copy-forget-me-not?ref=shop_home_active_1&logging_key=c6cc5a3635787b6e551ae12e0b6351893506b42b%3A4352840937" target="_blank"><img width="350" alt="Forget Me Not" class="pure-img-responsive" src="img/common/SignedCopyForgetMeNot.jpg"></a>
+            </div>
+            <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <a href="https://www.etsy.com/listing/4352839155/personalized-signed-copy-blood-land-by?ref=shop_home_active_2&logging_key=e51049defa9d24b5b9601acc2b8d42aec04569cb%3A4352839155" target="_blank"><img width="350" alt="Blood Land" class="pure-img-responsive" src="img/common/SignedCopyBloodLand.jpg"></a>
             </div>
         </div>
     </div>
@@ -184,7 +210,7 @@
 
     <div id='author' class="l-box-lrg pure-g">
         <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-            <img width="350" alt="Jackie Headshot" class="pure-img-responsive" src="img/common/authorpic.jpg">
+            <img width="350" alt="Jackie Headshot" class="pure-img-responsive" src="img/common/AuthorPhoto.jpg">
         </div>
         <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
 
@@ -202,67 +228,11 @@
         </div>
     </div>
 
-
-    <div id="shop" class="content ribbon l-box-lrg">
-        <h2 class="content-head is-center content-head-ribbon">Book Merchandise</h2>
-        <div class="pure-g">
-
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="https://www.etsy.com/listing/728762847/forget-me-not-design-mens-premium-tee?ref=shop_home_active_7" target="_blank" class="img-link">
-                <img class='cropped' src="img/common/menspremiumtee.jpg" alt="Forget Me Not Men's T-Shirt">
-                <p>Forget Me Not Men's Premium Tee $25.48</p></a>
-            </div>
-
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="https://www.etsy.com/listing/714898108/forget-me-not-design-womans-premium-tee?ref=shop_home_active_9" target="_blank" class="img-link">
-                <img class='cropped' src="img/common/womanspremiumtee.jpg" alt="Forget Me Not Women's T-Shirt">
-                <p>Forget Me Not Women's Fitted Premium Tee $25.48</p></a>
-            </div>
-
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="https://www.etsy.com/listing/755078421/blood-land-design-womans-premium-tee?ref=shop_home_active_18" target="_blank" class="img-link">
-                <img class='cropped' src="img/common/bloodlandwomentee.jpg" alt="Blood Land Woman's Tee">
-                <p>Blood Land Women's Fitted Premium Tee $25.48</p></a>
-            </div>
-
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="https://www.etsy.com/listing/729497225/eye-socket-pub-design-coffee-mug?ref=shop_home_active_3" target="_blank" class="img-link">
-                <img class='cropped' src="img/common/eyesocketpubmug.jpg" alt="Eye Socket Pub Mug">
-                <p>Eye Socket Pub 11oz Mug $18.98</p></a>
-            </div>
-
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="https://www.etsy.com/listing/729492111/forget-me-not-design-coffee-mug?ref=shop_home_active_4" target="_blank" class="img-link">
-                <img class='cropped' src="img/common/forgetmenotmug.jpg" alt="Forget Me Not Mug">
-                <p>Forget Me Not 11oz Mug $18.98</p></a>
-            </div>
-
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="https://www.etsy.com/listing/789154243/freedom-night-design-mens-premium-tee?ref=shop_home_active_12" target="_blank" class="img-link">
-                <img class='cropped' src="img/common/freedomnightmenstee.jpg" alt="Freedom Night Men's Tee">
-                <p>Freedom Night Men's Premium Tee $25.48</p></a>
-            </div>
-
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="https://www.etsy.com/listing/732194109/eye-socket-pub-design-mens-premium-tee?ref=shop_home_active_22" target="_blank" class="img-link">
-                <img class='cropped' src="img/common/eyesocketpubmenspremiumtee.jpg" alt="Eye Socket Pub Men's T-Shirt">
-                <p>Eye Socket Pub Men's Premium Tee $25.48</p></a>
-            </div>
-
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="https://www.etsy.com/listing/729499547/eye-socket-pub-design-womans-premium-tee?ref=shop_home_active_2" target="_blank" class="img-link">
-                <img class='cropped' src="img/common/eyesocketpupwomanpremiumtee.jpg" alt="Eye Socket Pub Women's T-Shirt">
-                <p>Eye Socket Pub Women's Fitted Premium Tee $25.48</p></a>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="footer l-box is-center">
+    <!-- <div class="footer l-box is-center">
         <a href="https://www.pinterest.com/pmpknqueen/" target="_blank"><img src="img/common/pinteresticon.png" class="icon" width="30" height="30"></a>
         <a href="https://www.instagram.com/pmpknqueen/" target="_blank"><img src="img/common/instaicon.jpeg" class="icon" width="30" height="30"></a>
         <a href="https://www.etsy.com/shop/JRLawsonNovels" target="_blank"><img src="img/common/etsyicon.png" class="icon" width="30" height="30"></a>
-    </div>
+    </div> -->
 
 </div>
 
